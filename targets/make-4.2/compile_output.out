@@ -1,0 +1,209 @@
+60118 execve("/usr/bin/gcc", ["gcc", "-g", "-O2", "-c", "-o", "remake.o", "remake.i"], [/* 21 vars */]) = 0
+60118 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+60118 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+60118 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+60118 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+60118 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+60118 open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+60118 open("/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 3
+60118 open("/usr/share/locale/en_US.UTF-8/LC_MESSAGES/gcc-5.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+60118 open("/usr/share/locale/en_US.utf8/LC_MESSAGES/gcc-5.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+60118 open("/usr/share/locale/en_US/LC_MESSAGES/gcc-5.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+60118 open("/usr/share/locale/en.UTF-8/LC_MESSAGES/gcc-5.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+60118 open("/usr/share/locale/en.utf8/LC_MESSAGES/gcc-5.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+60118 open("/usr/share/locale/en/LC_MESSAGES/gcc-5.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+60118 open("/usr/share/locale-langpack/en_US.UTF-8/LC_MESSAGES/gcc-5.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+60118 open("/usr/share/locale-langpack/en_US.utf8/LC_MESSAGES/gcc-5.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+60118 open("/usr/share/locale-langpack/en_US/LC_MESSAGES/gcc-5.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+60118 open("/usr/share/locale-langpack/en.UTF-8/LC_MESSAGES/gcc-5.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+60118 open("/usr/share/locale-langpack/en.utf8/LC_MESSAGES/gcc-5.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+60118 open("/usr/share/locale-langpack/en/LC_MESSAGES/gcc-5.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+60118 access("/home/daniter/bin/gcc", X_OK) = -1 ENOENT (No such file or directory)
+60118 access("/home/daniter/.local/bin/gcc", X_OK) = -1 ENOENT (No such file or directory)
+60118 access("/usr/local/sbin/gcc", X_OK) = -1 ENOENT (No such file or directory)
+60118 access("/usr/local/bin/gcc", X_OK) = -1 ENOENT (No such file or directory)
+60118 access("/usr/sbin/gcc", X_OK)     = -1 ENOENT (No such file or directory)
+60118 access("/usr/bin/gcc", X_OK)      = 0
+60118 stat("/usr/bin/gcc", {st_mode=S_IFREG|0755, st_size=915736, ...}) = 0
+60118 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+60118 lstat("/usr/bin", {st_mode=S_IFDIR|0755, st_size=61440, ...}) = 0
+60118 lstat("/usr/bin/gcc", {st_mode=S_IFLNK|0777, st_size=5, ...}) = 0
+60118 readlink("/usr/bin/gcc", "gcc-5", 4095) = 5
+60118 lstat("/usr/bin/gcc-5", {st_mode=S_IFREG|0755, st_size=915736, ...}) = 0
+60118 access("/home/daniter/bin/gcc", X_OK) = -1 ENOENT (No such file or directory)
+60118 access("/home/daniter/.local/bin/gcc", X_OK) = -1 ENOENT (No such file or directory)
+60118 access("/usr/local/sbin/gcc", X_OK) = -1 ENOENT (No such file or directory)
+60118 access("/usr/local/bin/gcc", X_OK) = -1 ENOENT (No such file or directory)
+60118 access("/usr/sbin/gcc", X_OK)     = -1 ENOENT (No such file or directory)
+60118 access("/usr/bin/gcc", X_OK)      = 0
+60118 stat("/usr/bin/gcc", {st_mode=S_IFREG|0755, st_size=915736, ...}) = 0
+60118 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+60118 lstat("/usr/bin", {st_mode=S_IFDIR|0755, st_size=61440, ...}) = 0
+60118 lstat("/usr/bin/gcc", {st_mode=S_IFLNK|0777, st_size=5, ...}) = 0
+60118 readlink("/usr/bin/gcc", "gcc-5", 4095) = 5
+60118 lstat("/usr/bin/gcc-5", {st_mode=S_IFREG|0755, st_size=915736, ...}) = 0
+60118 access("remake.i", F_OK)          = 0
+60118 getcwd("/home/daniter/Documents/winstein/gg/gg/exploration/targets/make-4.2", 4096) = 68
+60118 lstat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/make-4.2/remake.i", {st_mode=S_IFREG|0664, st_size=291678, ...}) = 0
+60118 getcwd("/home/daniter/Documents/winstein/gg/gg/exploration/targets/make-4.2", 4096) = 68
+60118 lstat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/make-4.2/remake.o", 0x7ffc6fc62d20) = -1 ENOENT (No such file or directory)
+60118 access("/usr/lib/gcc/x86_64-linux-gnu/5/", X_OK) = 0
+60118 access("/usr/lib/gcc/x86_64-linux-gnu/5/", X_OK) = 0
+60118 access("/usr/lib/gcc/x86_64-linux-gnu/5/specs", R_OK) = -1 ENOENT (No such file or directory)
+60118 access("/usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/5/specs", R_OK) = -1 ENOENT (No such file or directory)
+60118 access("/usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/lib/specs", R_OK) = -1 ENOENT (No such file or directory)
+60118 access("/usr/lib/gcc/x86_64-linux-gnu/specs", R_OK) = -1 ENOENT (No such file or directory)
+60118 access("/usr/lib/gcc/x86_64-linux-gnu/5/", X_OK) = 0
+60118 access("/tmp", R_OK|W_OK|X_OK)    = 0
+60118 open("/tmp/ccEeIv1L.s", O_RDWR|O_CREAT|O_EXCL, 0600) = 3
+60118 stat("/usr/lib/gcc/x86_64-linux-gnu/5/cc1", {st_mode=S_IFREG|0755, st_size=20863160, ...}) = 0
+60118 access("/usr/lib/gcc/x86_64-linux-gnu/5/cc1", X_OK) = 0
+60119 execve("/usr/lib/gcc/x86_64-linux-gnu/5/cc1", ["/usr/lib/gcc/x86_64-linux-gnu/5/cc1", "-fpreprocessed", "remake.i", "-quiet", "-dumpbase", "remake.i", "-mtune=generic", "-march=x86-64", "-auxbase-strip", "remake.o", "-g", "-O2", "-fstack-protector-strong", "-Wformat", "-Wformat-security", "-o", "/tmp/ccEeIv1L.s"], [/* 23 vars */]) = 0
+60119 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+60119 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+60119 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+60119 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+60119 open("/usr/lib/x86_64-linux-gnu/libisl.so.15", O_RDONLY|O_CLOEXEC) = 3
+60119 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+60119 open("/usr/lib/x86_64-linux-gnu/libmpc.so.3", O_RDONLY|O_CLOEXEC) = 3
+60119 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+60119 open("/usr/lib/x86_64-linux-gnu/libmpfr.so.4", O_RDONLY|O_CLOEXEC) = 3
+60119 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+60119 open("/usr/lib/x86_64-linux-gnu/libgmp.so.10", O_RDONLY|O_CLOEXEC) = 3
+60119 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+60119 open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+60119 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+60119 open("/lib/x86_64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+60119 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+60119 open("/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+60119 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+60119 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+60119 open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+60119 open("/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 3
+60119 open("/usr/share/locale/en_US.UTF-8/LC_MESSAGES/gcc-5.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+60119 open("/usr/share/locale/en_US.utf8/LC_MESSAGES/gcc-5.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+60119 open("/usr/share/locale/en_US/LC_MESSAGES/gcc-5.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+60119 open("/usr/share/locale/en.UTF-8/LC_MESSAGES/gcc-5.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+60119 open("/usr/share/locale/en.utf8/LC_MESSAGES/gcc-5.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+60119 open("/usr/share/locale/en/LC_MESSAGES/gcc-5.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+60119 open("/usr/share/locale-langpack/en_US.UTF-8/LC_MESSAGES/gcc-5.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+60119 open("/usr/share/locale-langpack/en_US.utf8/LC_MESSAGES/gcc-5.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+60119 open("/usr/share/locale-langpack/en_US/LC_MESSAGES/gcc-5.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+60119 open("/usr/share/locale-langpack/en.UTF-8/LC_MESSAGES/gcc-5.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+60119 open("/usr/share/locale-langpack/en.utf8/LC_MESSAGES/gcc-5.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+60119 open("/usr/share/locale-langpack/en/LC_MESSAGES/gcc-5.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+60119 open("/dev/urandom", O_RDONLY)    = 3
+60119 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+60119 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+60119 lstat("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+60119 lstat("/usr/lib/gcc/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+60119 lstat("/usr/lib/gcc/x86_64-linux-gnu/5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+60119 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+60119 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+60119 lstat("/usr/local", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+60119 lstat("/usr/local/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+60119 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+60119 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+60119 lstat("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+60119 lstat("/usr/lib/gcc/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+60119 lstat("/usr/lib/gcc/x86_64-linux-gnu/5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+60119 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+60119 access("/usr/lib/gcc/x86_64-linux-gnu/5/", X_OK) = 0
+60119 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+60119 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+60119 lstat("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+60119 lstat("/usr/lib/gcc/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+60119 lstat("/usr/lib/gcc/x86_64-linux-gnu/5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+60119 lstat("/usr/x86_64-linux-gnu", 0x7ffcef2639b0) = -1 ENOENT (No such file or directory)
+60119 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+60119 lstat("/usr/include", {st_mode=S_IFDIR|0755, st_size=16384, ...}) = 0
+60119 stat("/usr/lib/gcc/x86_64-linux-gnu/5/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+60119 stat("/usr/local/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+60119 stat("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+60119 stat("/usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/include", 0x7ffcef2649c0) = -1 ENOENT (No such file or directory)
+60119 stat("/usr/include", {st_mode=S_IFDIR|0755, st_size=16384, ...}) = 0
+60119 stat("remake.i.gch", 0x7ffcef264a20) = -1 ENOENT (No such file or directory)
+60119 open("remake.i", O_RDONLY|O_NOCTTY) = 3
+60119 lstat("/tmp", {st_mode=S_IFDIR|S_ISVTX|0777, st_size=4096, ...}) = 0
+60119 lstat("/tmp/ccEeIv1L.s", {st_mode=S_IFREG|0600, st_size=0, ...}) = 0
+60119 getcwd("/home/daniter/Documents/winstein/gg/gg/exploration/targets/make-4.2", 4096) = 68
+60119 lstat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/make-4.2/remake.c", {st_mode=S_IFREG|0664, st_size=56132, ...}) = 0
+60119 open("/tmp/ccEeIv1L.s", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+60119 stat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/make-4.2", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+60119 stat(".", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+60119 +++ exited with 0 +++
+60118 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=60119, si_uid=1000, si_status=0, si_utime=34, si_stime=2} ---
+60118 stat("/usr/lib/gcc/x86_64-linux-gnu/5/as", 0x7ffc6fc63cb0) = -1 ENOENT (No such file or directory)
+60118 stat("/usr/lib/gcc/x86_64-linux-gnu/5/as", 0x7ffc6fc63cb0) = -1 ENOENT (No such file or directory)
+60118 stat("/usr/lib/gcc/x86_64-linux-gnu/as", 0x7ffc6fc63cb0) = -1 ENOENT (No such file or directory)
+60118 stat("/usr/lib/gcc/x86_64-linux-gnu/5/as", 0x7ffc6fc63cb0) = -1 ENOENT (No such file or directory)
+60118 stat("/usr/lib/gcc/x86_64-linux-gnu/as", 0x7ffc6fc63cb0) = -1 ENOENT (No such file or directory)
+60118 stat("/usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/5/as", 0x7ffc6fc63cb0) = -1 ENOENT (No such file or directory)
+60118 stat("/usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/as", 0x7ffc6fc63cb0) = -1 ENOENT (No such file or directory)
+60118 stat("/usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/bin/as", 0x7ffc6fc63cb0) = -1 ENOENT (No such file or directory)
+60120 execve("/home/daniter/bin/as", ["as", "--64", "-o", "remake.o", "/tmp/ccEeIv1L.s"], [/* 23 vars */]) = -1 ENOENT (No such file or directory)
+60120 execve("/home/daniter/.local/bin/as", ["as", "--64", "-o", "remake.o", "/tmp/ccEeIv1L.s"], [/* 23 vars */]) = -1 ENOENT (No such file or directory)
+60120 execve("/usr/local/sbin/as", ["as", "--64", "-o", "remake.o", "/tmp/ccEeIv1L.s"], [/* 23 vars */]) = -1 ENOENT (No such file or directory)
+60120 execve("/usr/local/bin/as", ["as", "--64", "-o", "remake.o", "/tmp/ccEeIv1L.s"], [/* 23 vars */]) = -1 ENOENT (No such file or directory)
+60120 execve("/usr/sbin/as", ["as", "--64", "-o", "remake.o", "/tmp/ccEeIv1L.s"], [/* 23 vars */]) = -1 ENOENT (No such file or directory)
+60120 execve("/usr/bin/as", ["as", "--64", "-o", "remake.o", "/tmp/ccEeIv1L.s"], [/* 23 vars */]) = 0
+60120 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+60120 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+60120 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+60120 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+60120 open("/usr/lib/x86_64-linux-gnu/libopcodes-2.26.1-system.so", O_RDONLY|O_CLOEXEC) = 3
+60120 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+60120 open("/usr/lib/x86_64-linux-gnu/libbfd-2.26.1-system.so", O_RDONLY|O_CLOEXEC) = 3
+60120 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+60120 open("/lib/x86_64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+60120 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+60120 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+60120 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+60120 open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+60120 open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+60120 stat("remake.o", 0x7ffe73efa940)  = -1 ENOENT (No such file or directory)
+60120 open("remake.o", O_RDWR|O_CREAT|O_TRUNC, 0666) = 3
+60120 open("/tmp/ccEeIv1L.s", O_RDONLY) = 4
+60120 open("/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 4
+60120 open("/usr/share/locale/en_US.UTF-8/LC_MESSAGES/gas.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+60120 open("/usr/share/locale/en_US.utf8/LC_MESSAGES/gas.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+60120 open("/usr/share/locale/en_US/LC_MESSAGES/gas.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+60120 open("/usr/share/locale/en.UTF-8/LC_MESSAGES/gas.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+60120 open("/usr/share/locale/en.utf8/LC_MESSAGES/gas.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+60120 open("/usr/share/locale/en/LC_MESSAGES/gas.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+60120 open("/usr/share/locale-langpack/en_US.UTF-8/LC_MESSAGES/gas.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+60120 open("/usr/share/locale-langpack/en_US.utf8/LC_MESSAGES/gas.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+60120 open("/usr/share/locale-langpack/en_US/LC_MESSAGES/gas.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+60120 open("/usr/share/locale-langpack/en.UTF-8/LC_MESSAGES/gas.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+60120 open("/usr/share/locale-langpack/en.utf8/LC_MESSAGES/gas.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+60120 open("/usr/share/locale-langpack/en/LC_MESSAGES/gas.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+60120 +++ exited with 0 +++
+60118 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=60120, si_uid=1000, si_status=0, si_utime=1, si_stime=0} ---
+60118 stat("/usr/lib/gcc/x86_64-linux-gnu/5/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+60118 stat("/usr/lib/gcc/x86_64-linux-gnu/5/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+60118 stat("/usr/lib/gcc/x86_64-linux-gnu/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+60118 stat("/usr/lib/gcc/x86_64-linux-gnu/5/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+60118 stat("/usr/lib/gcc/x86_64-linux-gnu/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+60118 stat("/usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/5/.", 0x7ffc6fc63d50) = -1 ENOENT (No such file or directory)
+60118 stat("/usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/.", 0x7ffc6fc63d50) = -1 ENOENT (No such file or directory)
+60118 stat("/usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/bin/.", 0x7ffc6fc63d50) = -1 ENOENT (No such file or directory)
+60118 stat("/usr/lib/gcc/x86_64-linux-gnu/5/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+60118 stat("/usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/5/.", 0x7ffc6fc63d50) = -1 ENOENT (No such file or directory)
+60118 stat("/usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/.", 0x7ffc6fc63d50) = -1 ENOENT (No such file or directory)
+60118 stat("/usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/lib/../lib/.", 0x7ffc6fc63d50) = -1 ENOENT (No such file or directory)
+60118 stat("/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/5/.", 0x7ffc6fc63d50) = -1 ENOENT (No such file or directory)
+60118 stat("/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/.", {st_mode=S_IFDIR|0755, st_size=69632, ...}) = 0
+60118 stat("/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+60118 stat("/lib/x86_64-linux-gnu/5/.", 0x7ffc6fc63d50) = -1 ENOENT (No such file or directory)
+60118 stat("/lib/x86_64-linux-gnu/.", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+60118 stat("/lib/../lib/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+60118 stat("/usr/lib/x86_64-linux-gnu/5/.", 0x7ffc6fc63d50) = -1 ENOENT (No such file or directory)
+60118 stat("/usr/lib/x86_64-linux-gnu/.", {st_mode=S_IFDIR|0755, st_size=69632, ...}) = 0
+60118 stat("/usr/lib/../lib/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+60118 stat("/usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/lib/.", 0x7ffc6fc63d50) = -1 ENOENT (No such file or directory)
+60118 stat("/usr/lib/gcc/x86_64-linux-gnu/5/../../../.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+60118 stat("/lib/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+60118 stat("/usr/lib/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+60118 stat("/tmp/ccEeIv1L.s", {st_mode=S_IFREG|0600, st_size=275788, ...}) = 0
+60118 unlink("/tmp/ccEeIv1L.s")         = 0
+60118 +++ exited with 0 +++

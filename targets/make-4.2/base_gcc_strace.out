@@ -1,0 +1,163 @@
+58835 execve("../gccbuild/gcc/xgcc", ["../gccbuild/gcc/xgcc", "-g", "-O2", "-c", "-o", "remake.o", "remake.i"], [/* 21 vars */]) = 0
+58835 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+58835 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+58835 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+58835 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+58835 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+58835 getcwd("/home/daniter/Documents/winstein/gg/gg/exploration/targets/make-4.2", 4096) = 68
+58835 lstat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+58835 lstat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc", {st_mode=S_IFDIR|0775, st_size=24576, ...}) = 0
+58835 lstat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/xgcc", {st_mode=S_IFREG|0775, st_size=3860064, ...}) = 0
+58835 getcwd("/home/daniter/Documents/winstein/gg/gg/exploration/targets/make-4.2", 4096) = 68
+58835 lstat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+58835 lstat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc", {st_mode=S_IFDIR|0775, st_size=24576, ...}) = 0
+58835 lstat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/xgcc", {st_mode=S_IFREG|0775, st_size=3860064, ...}) = 0
+58835 access("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/", X_OK) = 0
+58835 access("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/", X_OK) = 0
+58835 access("remake.i", F_OK)          = 0
+58835 getcwd("/home/daniter/Documents/winstein/gg/gg/exploration/targets/make-4.2", 4096) = 68
+58835 lstat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/make-4.2/remake.i", {st_mode=S_IFREG|0664, st_size=0, ...}) = 0
+58835 getcwd("/home/daniter/Documents/winstein/gg/gg/exploration/targets/make-4.2", 4096) = 68
+58835 lstat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/make-4.2/remake.o", {st_mode=S_IFREG|0664, st_size=1240, ...}) = 0
+58835 access("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/", X_OK) = 0
+58835 access("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/", X_OK) = 0
+58835 access("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/specs", R_OK) = -1 ENOENT (No such file or directory)
+58835 access("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/../lib/gcc/specs", R_OK) = -1 ENOENT (No such file or directory)
+58835 access("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../x86_64-pc-linux-gnu/lib/x86_64-pc-linux-gnu/6.2.0/specs", R_OK) = -1 ENOENT (No such file or directory)
+58835 access("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../x86_64-pc-linux-gnu/lib/specs", R_OK) = -1 ENOENT (No such file or directory)
+58835 access("/usr/local/lib/gcc/x86_64-pc-linux-gnu/specs", R_OK) = -1 ENOENT (No such file or directory)
+58835 access("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/", X_OK) = 0
+58835 access("/tmp", R_OK|W_OK|X_OK)    = 0
+58835 open("/tmp/ccfpzclz.s", O_RDWR|O_CREAT|O_EXCL, 0600) = 3
+58835 stat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/../libexec/gcc/x86_64-pc-linux-gnu/6.2.0/cc1", 0x7fff7f86a870) = -1 ENOENT (No such file or directory)
+58835 stat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/../libexec/gcc/x86_64-linux-gnu/cc1", 0x7fff7f86a870) = -1 ENOENT (No such file or directory)
+58835 stat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/../libexec/gcc/cc1", 0x7fff7f86a870) = -1 ENOENT (No such file or directory)
+58835 stat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../x86_64-pc-linux-gnu/bin/x86_64-pc-linux-gnu/6.2.0/cc1", 0x7fff7f86a870) = -1 ENOENT (No such file or directory)
+58835 stat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../x86_64-pc-linux-gnu/bin/x86_64-linux-gnu/cc1", 0x7fff7f86a870) = -1 ENOENT (No such file or directory)
+58835 stat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../x86_64-pc-linux-gnu/bin/cc1", 0x7fff7f86a870) = -1 ENOENT (No such file or directory)
+58836 execve("/home/daniter/bin/cc1", ["cc1", "-fpreprocessed", "remake.i", "-quiet", "-dumpbase", "remake.i", "-mtune=generic", "-march=x86-64", "-auxbase-strip", "remake.o", "-g", "-O2", "-o", "/tmp/ccfpzclz.s"], [/* 24 vars */]) = -1 ENOENT (No such file or directory)
+58836 execve("/home/daniter/.local/bin/cc1", ["cc1", "-fpreprocessed", "remake.i", "-quiet", "-dumpbase", "remake.i", "-mtune=generic", "-march=x86-64", "-auxbase-strip", "remake.o", "-g", "-O2", "-o", "/tmp/ccfpzclz.s"], [/* 24 vars */]) = -1 ENOENT (No such file or directory)
+58836 execve("/usr/local/sbin/cc1", ["cc1", "-fpreprocessed", "remake.i", "-quiet", "-dumpbase", "remake.i", "-mtune=generic", "-march=x86-64", "-auxbase-strip", "remake.o", "-g", "-O2", "-o", "/tmp/ccfpzclz.s"], [/* 24 vars */]) = -1 ENOENT (No such file or directory)
+58836 execve("/usr/local/bin/cc1", ["cc1", "-fpreprocessed", "remake.i", "-quiet", "-dumpbase", "remake.i", "-mtune=generic", "-march=x86-64", "-auxbase-strip", "remake.o", "-g", "-O2", "-o", "/tmp/ccfpzclz.s"], [/* 24 vars */]) = -1 ENOENT (No such file or directory)
+58836 execve("/usr/sbin/cc1", ["cc1", "-fpreprocessed", "remake.i", "-quiet", "-dumpbase", "remake.i", "-mtune=generic", "-march=x86-64", "-auxbase-strip", "remake.o", "-g", "-O2", "-o", "/tmp/ccfpzclz.s"], [/* 24 vars */]) = -1 ENOENT (No such file or directory)
+58836 execve("/usr/bin/cc1", ["cc1", "-fpreprocessed", "remake.i", "-quiet", "-dumpbase", "remake.i", "-mtune=generic", "-march=x86-64", "-auxbase-strip", "remake.o", "-g", "-O2", "-o", "/tmp/ccfpzclz.s"], [/* 24 vars */]) = -1 ENOENT (No such file or directory)
+58836 execve("/sbin/cc1", ["cc1", "-fpreprocessed", "remake.i", "-quiet", "-dumpbase", "remake.i", "-mtune=generic", "-march=x86-64", "-auxbase-strip", "remake.o", "-g", "-O2", "-o", "/tmp/ccfpzclz.s"], [/* 24 vars */]) = -1 ENOENT (No such file or directory)
+58836 execve("/bin/cc1", ["cc1", "-fpreprocessed", "remake.i", "-quiet", "-dumpbase", "remake.i", "-mtune=generic", "-march=x86-64", "-auxbase-strip", "remake.o", "-g", "-O2", "-o", "/tmp/ccfpzclz.s"], [/* 24 vars */]) = -1 ENOENT (No such file or directory)
+58836 execve("/usr/games/cc1", ["cc1", "-fpreprocessed", "remake.i", "-quiet", "-dumpbase", "remake.i", "-mtune=generic", "-march=x86-64", "-auxbase-strip", "remake.o", "-g", "-O2", "-o", "/tmp/ccfpzclz.s"], [/* 24 vars */]) = -1 ENOENT (No such file or directory)
+58836 execve("/usr/local/games/cc1", ["cc1", "-fpreprocessed", "remake.i", "-quiet", "-dumpbase", "remake.i", "-mtune=generic", "-march=x86-64", "-auxbase-strip", "remake.o", "-g", "-O2", "-o", "/tmp/ccfpzclz.s"], [/* 24 vars */]) = -1 ENOENT (No such file or directory)
+58836 execve("/snap/bin/cc1", ["cc1", "-fpreprocessed", "remake.i", "-quiet", "-dumpbase", "remake.i", "-mtune=generic", "-march=x86-64", "-auxbase-strip", "remake.o", "-g", "-O2", "-o", "/tmp/ccfpzclz.s"], [/* 24 vars */]) = -1 ENOENT (No such file or directory)
+58836 execve("../gccbuild/gcc//cc1", ["cc1", "-fpreprocessed", "remake.i", "-quiet", "-dumpbase", "remake.i", "-mtune=generic", "-march=x86-64", "-auxbase-strip", "remake.o", "-g", "-O2", "-o", "/tmp/ccfpzclz.s"], [/* 24 vars */]) = 0
+58836 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+58836 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+58836 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+58836 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+58836 open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+58836 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+58836 open("/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+58836 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+58836 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+58836 open("/dev/urandom", O_RDONLY)    = 3
+58836 lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+58836 lstat("/home/daniter", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+58836 lstat("/home/daniter/Documents", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+58836 lstat("/home/daniter/Documents/winstein", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+58836 lstat("/home/daniter/Documents/winstein/gg", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+58836 lstat("/home/daniter/Documents/winstein/gg/gg", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+58836 lstat("/home/daniter/Documents/winstein/gg/gg/exploration", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+58836 lstat("/home/daniter/Documents/winstein/gg/gg/exploration/targets", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+58836 lstat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+58836 lstat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc", {st_mode=S_IFDIR|0775, st_size=24576, ...}) = 0
+58836 lstat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/lib", 0x7ffcac2a10d0) = -1 ENOENT (No such file or directory)
+58836 access("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/", X_OK) = 0
+58836 access("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/", X_OK) = 0
+58836 access("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/", X_OK) = 0
+58836 stat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/6.2.0/include", 0x7ffcac2a21f0) = -1 ENOENT (No such file or directory)
+58836 stat("/usr/local/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+58836 stat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/6.2.0/include-fixed", 0x7ffcac2a21f0) = -1 ENOENT (No such file or directory)
+58836 stat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../x86_64-pc-linux-gnu/include", 0x7ffcac2a21f0) = -1 ENOENT (No such file or directory)
+58836 stat("/usr/include", {st_mode=S_IFDIR|0755, st_size=16384, ...}) = 0
+58836 stat("remake.i.gch", 0x7ffcac2a2240) = -1 ENOENT (No such file or directory)
+58836 open("remake.i", O_RDONLY|O_NOCTTY) = 3
+58836 lstat("/tmp", {st_mode=S_IFDIR|S_ISVTX|0777, st_size=4096, ...}) = 0
+58836 lstat("/tmp/ccfpzclz.s", {st_mode=S_IFREG|0600, st_size=0, ...}) = 0
+58836 getcwd("/home/daniter/Documents/winstein/gg/gg/exploration/targets/make-4.2", 4096) = 68
+58836 lstat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/make-4.2/remake.i", {st_mode=S_IFREG|0664, st_size=0, ...}) = 0
+58836 open("/tmp/ccfpzclz.s", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+58836 stat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/make-4.2", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+58836 stat(".", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+58836 +++ exited with 0 +++
+58835 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=58836, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+58835 stat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/../libexec/gcc/x86_64-pc-linux-gnu/6.2.0/as", 0x7fff7f86b730) = -1 ENOENT (No such file or directory)
+58835 stat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/../libexec/gcc/x86_64-linux-gnu/as", 0x7fff7f86b730) = -1 ENOENT (No such file or directory)
+58835 stat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/../libexec/gcc/as", 0x7fff7f86b730) = -1 ENOENT (No such file or directory)
+58835 stat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../x86_64-pc-linux-gnu/bin/x86_64-pc-linux-gnu/6.2.0/as", 0x7fff7f86b730) = -1 ENOENT (No such file or directory)
+58835 stat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../x86_64-pc-linux-gnu/bin/x86_64-linux-gnu/as", 0x7fff7f86b730) = -1 ENOENT (No such file or directory)
+58835 stat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../x86_64-pc-linux-gnu/bin/as", 0x7fff7f86b730) = -1 ENOENT (No such file or directory)
+58837 execve("/home/daniter/bin/as", ["as", "--64", "-o", "remake.o", "/tmp/ccfpzclz.s"], [/* 24 vars */]) = -1 ENOENT (No such file or directory)
+58837 execve("/home/daniter/.local/bin/as", ["as", "--64", "-o", "remake.o", "/tmp/ccfpzclz.s"], [/* 24 vars */]) = -1 ENOENT (No such file or directory)
+58837 execve("/usr/local/sbin/as", ["as", "--64", "-o", "remake.o", "/tmp/ccfpzclz.s"], [/* 24 vars */]) = -1 ENOENT (No such file or directory)
+58837 execve("/usr/local/bin/as", ["as", "--64", "-o", "remake.o", "/tmp/ccfpzclz.s"], [/* 24 vars */]) = -1 ENOENT (No such file or directory)
+58837 execve("/usr/sbin/as", ["as", "--64", "-o", "remake.o", "/tmp/ccfpzclz.s"], [/* 24 vars */]) = -1 ENOENT (No such file or directory)
+58837 execve("/usr/bin/as", ["as", "--64", "-o", "remake.o", "/tmp/ccfpzclz.s"], [/* 24 vars */]) = 0
+58837 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+58837 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+58837 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+58837 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+58837 open("/usr/lib/x86_64-linux-gnu/libopcodes-2.26.1-system.so", O_RDONLY|O_CLOEXEC) = 3
+58837 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+58837 open("/usr/lib/x86_64-linux-gnu/libbfd-2.26.1-system.so", O_RDONLY|O_CLOEXEC) = 3
+58837 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+58837 open("/lib/x86_64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+58837 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+58837 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+58837 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+58837 open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+58837 open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+58837 stat("remake.o", {st_mode=S_IFREG|0664, st_size=1240, ...}) = 0
+58837 lstat("remake.o", {st_mode=S_IFREG|0664, st_size=1240, ...}) = 0
+58837 unlink("remake.o")                = 0
+58837 open("remake.o", O_RDWR|O_CREAT|O_TRUNC, 0666) = 3
+58837 open("/tmp/ccfpzclz.s", O_RDONLY) = 4
+58837 open("/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 4
+58837 open("/usr/share/locale/en_US.UTF-8/LC_MESSAGES/gas.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+58837 open("/usr/share/locale/en_US.utf8/LC_MESSAGES/gas.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+58837 open("/usr/share/locale/en_US/LC_MESSAGES/gas.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+58837 open("/usr/share/locale/en.UTF-8/LC_MESSAGES/gas.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+58837 open("/usr/share/locale/en.utf8/LC_MESSAGES/gas.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+58837 open("/usr/share/locale/en/LC_MESSAGES/gas.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+58837 open("/usr/share/locale-langpack/en_US.UTF-8/LC_MESSAGES/gas.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+58837 open("/usr/share/locale-langpack/en_US.utf8/LC_MESSAGES/gas.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+58837 open("/usr/share/locale-langpack/en_US/LC_MESSAGES/gas.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+58837 open("/usr/share/locale-langpack/en.UTF-8/LC_MESSAGES/gas.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+58837 open("/usr/share/locale-langpack/en.utf8/LC_MESSAGES/gas.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+58837 open("/usr/share/locale-langpack/en/LC_MESSAGES/gas.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+58837 +++ exited with 0 +++
+58835 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=58837, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+58835 stat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/../libexec/gcc/x86_64-pc-linux-gnu/6.2.0/.", 0x7fff7f86b890) = -1 ENOENT (No such file or directory)
+58835 stat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/../libexec/gcc/x86_64-linux-gnu/.", 0x7fff7f86b890) = -1 ENOENT (No such file or directory)
+58835 stat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/../libexec/gcc/.", 0x7fff7f86b890) = -1 ENOENT (No such file or directory)
+58835 stat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../x86_64-pc-linux-gnu/bin/x86_64-pc-linux-gnu/6.2.0/.", 0x7fff7f86b890) = -1 ENOENT (No such file or directory)
+58835 stat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../x86_64-pc-linux-gnu/bin/x86_64-linux-gnu/.", 0x7fff7f86b890) = -1 ENOENT (No such file or directory)
+58835 stat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../x86_64-pc-linux-gnu/bin/.", 0x7fff7f86b890) = -1 ENOENT (No such file or directory)
+58835 stat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/.", 0x7fff7f86b890) = -1 ENOENT (No such file or directory)
+58835 stat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/../lib/gcc/x86_64-linux-gnu/.", 0x7fff7f86b890) = -1 ENOENT (No such file or directory)
+58835 stat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/../lib/gcc/.", 0x7fff7f86b890) = -1 ENOENT (No such file or directory)
+58835 stat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../x86_64-pc-linux-gnu/lib/x86_64-pc-linux-gnu/6.2.0/.", 0x7fff7f86b890) = -1 ENOENT (No such file or directory)
+58835 stat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../x86_64-pc-linux-gnu/lib/x86_64-linux-gnu/.", 0x7fff7f86b890) = -1 ENOENT (No such file or directory)
+58835 stat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../x86_64-pc-linux-gnu/lib/../lib64/.", 0x7fff7f86b890) = -1 ENOENT (No such file or directory)
+58835 stat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../x86_64-pc-linux-gnu/6.2.0/.", 0x7fff7f86b890) = -1 ENOENT (No such file or directory)
+58835 stat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../x86_64-linux-gnu/.", 0x7fff7f86b890) = -1 ENOENT (No such file or directory)
+58835 stat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../lib64/.", 0x7fff7f86b890) = -1 ENOENT (No such file or directory)
+58835 stat("/lib/x86_64-pc-linux-gnu/6.2.0/.", 0x7fff7f86b890) = -1 ENOENT (No such file or directory)
+58835 stat("/lib/x86_64-linux-gnu/.", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+58835 stat("/lib/../lib64/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+58835 stat("/usr/lib/x86_64-pc-linux-gnu/6.2.0/.", 0x7fff7f86b890) = -1 ENOENT (No such file or directory)
+58835 stat("/usr/lib/x86_64-linux-gnu/.", {st_mode=S_IFDIR|0755, st_size=69632, ...}) = 0
+58835 stat("/usr/lib/../lib64/.", 0x7fff7f86b890) = -1 ENOENT (No such file or directory)
+58835 stat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../x86_64-pc-linux-gnu/lib/.", 0x7fff7f86b890) = -1 ENOENT (No such file or directory)
+58835 stat("/home/daniter/Documents/winstein/gg/gg/exploration/targets/gccbuild/gcc/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../.", 0x7fff7f86b890) = -1 ENOENT (No such file or directory)
+58835 stat("/lib/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+58835 stat("/usr/lib/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+58835 stat("/tmp/ccfpzclz.s", {st_mode=S_IFREG|0600, st_size=382, ...}) = 0
+58835 unlink("/tmp/ccfpzclz.s")         = 0
+58835 +++ exited with 0 +++
