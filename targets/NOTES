@@ -1,0 +1,30 @@
+#0  0x00007ffff75f64c0 in __open_nocancel () at ../sysdeps/unix/syscall-template.S:81
+#1  0x00007ffff75852d2 in _IO_file_open (is32not64=8, read_write=8, prot=438, 
+    posix_mode=<optimized out>, filename=0x7fffffffbc40 "\230\226h\367\377\177", fp=0x1e7a3b0)
+    at fileops.c:225
+#2  _IO_new_file_fopen (fp=fp@entry=0x1e7a3b0, 
+    filename=filename@entry=0x7ffff7689698 "/proc/meminfo", mode=<optimized out>, 
+    mode@entry=0x7ffff7687258 "rce", is32not64=is32not64@entry=1) at fileops.c:333
+#3  0x00007ffff75793d4 in __fopen_internal (
+    filename=filename@entry=0x7ffff7689698 "/proc/meminfo", 
+    mode=mode@entry=0x7ffff7687258 "rce", is32=is32@entry=1) at iofopen.c:90
+#4  0x00007ffff757941a in _IO_new_fopen (filename=filename@entry=0x7ffff7689698 "/proc/meminfo", 
+    mode=mode@entry=0x7ffff7687258 "rce") at iofopen.c:103
+#5  0x00007ffff7602a2b in phys_pages_info (format=format@entry=0x7ffff76896e1 "MemTotal: %ld kB")
+    at ../sysdeps/unix/sysv/linux/getsysstats.c:296
+#6  0x00007ffff7602e3c in __get_phys_pages () at ../sysdeps/unix/sysv/linux/getsysstats.c:340
+#7  0x00007ffff75ce03a in posix_sysconf (name=85) at ../sysdeps/posix/sysconf.c:632
+#8  linux_sysconf (name=85) at ../sysdeps/unix/sysv/linux/x86_64/../sysconf.c:145
+#9  __GI___sysconf (name=name@entry=85) at ../sysdeps/unix/sysv/linux/x86_64/sysconf.c:36
+#10 0x00007ffff75466eb in __GI_qsort_r (b=0x1e79c20, n=241, s=8, 
+    cmp=0xa41ec0 <cmp_dfsnum(void const*, void const*)>, arg=0x0) at msort.c:187
+#11 0x0000000000a4451b in prune_unused_phi_nodes (uses=0x1ed2390, kills=0x1ed2350, 
+    phis=0x1e827d0) at ../../gcc-6.3.0/gcc/tree-into-ssa.c:803
+#12 insert_phi_nodes_for (var=0x7ffff74d7ea0, 
+    phi_insertion_points=phi_insertion_points@entry=0x1e827d0, update_p=update_p@entry=false)
+    at ../../gcc-6.3.0/gcc/tree-into-ssa.c:973
+#13 0x0000000000a4aac8 in insert_phi_nodes (dfs=0x1e7e860)
+    at ../../gcc-6.3.0/gcc/tree-into-ssa.c:1075
+#14 (anonymous namespace)::pass_build_ssa::execute (this=<optimized out>, fun=0x7ffff72877e0)
+    at ../../gcc-6.3.0/gcc/tree-into-ssa.c:2362
+
