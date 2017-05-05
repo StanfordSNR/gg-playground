@@ -722,7 +722,6 @@ mmap_gt_pch_use_address (void *base, size_t size, int fd, size_t offset)
 }
 #endif /* HAVE_MMAP_FILE */
 
-#define ENABLE_GC_CHECKING 1
 #if !defined ENABLE_GC_CHECKING && !defined ENABLE_GC_ALWAYS_COLLECT
 
 /* Modify the bound based on rlimits.  */
