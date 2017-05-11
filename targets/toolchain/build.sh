@@ -1,9 +1,55 @@
 #!/bin/bash
 
+OPTIND=1
+debug=0
+
+while getopts "h?d" opt; do
+    case "$opt" in
+    h|\?)
+        echo "Use -d flag to build debuggable version"
+        exit 0
+        ;;
+    d)  debug=1
+        ;;
+    esac
+done
+shift "$((OPTIND-1))"
+
+## Download all dependencies
+linux_file="linux-4.10.14"
+binutils_file="binutils-2.28"
+#musl_file="musl-1.1.16"
+libgg_file="libgg"
+gcc_file="gcc-6.3.0"
+
+if [ ! -d $linux_file ]
+then
+    curl https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.10.14.tar.xz  | tar Jx
+fi
+if [ ! -d $binutils_file ]
+then
+    curl https://ftp.gnu.org/gnu/binutils/binutils-2.28.tar.gz | tar xz
+fi
+if [ ! -d $libgg_file ]
+then
+    git clone https://github.com/StanfordSNR/libgg.git
+fi
+if [ ! -d $gcc_file ]
+then
+    curl https://ftp.gnu.org/gnu/gcc/gcc-6.3.0/gcc-6.3.0.tar.gz | tar xz
+    cd gcc*
+    ./contrib/download_prerequisites
+    cd -
+fi
+
 ## Create musl standalone(static) compiler
 ## Custom Optimizations
-#OPT='-Os -mtune=generic -fomit-frame-pointer'
-OPT='-Og'
+if [ $debug -eq 1 ]
+then 
+    OPT='-Og'
+else
+    OPT='-Os -mtune=generic -fomit-frame-pointer'
+fi
 ## Number of threads
 WORKERS=
 ## Arch short designation (amd64 not recognized by musl)
@@ -13,8 +59,14 @@ TARGET='x86_64-linux-musl'
 
 ## End of user defined variables
 export PREFIX="`pwd`/build-$TARGET"
-export CFLAGS="$OPT -fno-fast-math -w -g" # -s"
-export CXXFLAGS="$OPT -fno-fast-math -w -g" # -s"
+if [ $debug -eq 1 ]
+then
+    export CFLAGS="$OPT -fno-fast-math -w -g" # -s"
+    export CXXFLAGS="$OPT -fno-fast-math -w -g" # -s"
+else
+    export CFLAGS="$OPT -fno-fast-math -w -g -s"
+    export CXXFLAGS="$OPT -fno-fast-math -w -g" # -s"
+fi
 export PATH="$PREFIX/bin:$PATH"
 
 ## Abort on error
@@ -31,16 +83,16 @@ cd "$PREFIX"
 ln -nfs . usr
 cd ..
 
-## Build temp musl
-rm -rf build-musl
-mkdir build-musl
-cd build-musl
-CROSS_COMPILE=" " ../musl*/configure --prefix="$PREFIX" --target="$ARCH" --disable-shared 1>/dev/null
+## Build temp libgg
+rm -rf build-libgg
+mkdir build-libgg
+cd build-libgg
+CROSS_COMPILE=" " ../libgg/configure --prefix="$PREFIX" --target="$ARCH" --disable-shared 1>/dev/null
 make -j$WORKERS 1>/dev/null
 make install 1>/dev/null
 cd ..
-rm -rf build-musl
-echo "1/7 musl done."
+rm -rf build-libgg
+echo "1/7 libgg done."
 
 ## Build temp binutils
 rm -rf build-binutils
@@ -57,7 +109,7 @@ echo "2/7 BINUTILS done."
 rm -rf build-gcc
 mkdir build-gcc
 cd build-gcc
-../gcc*/configure --prefix="$PREFIX" --target="$TARGET" --with-sysroot="$PREFIX" --disable-multilib --disable-bootstrap --disable-werror --disable-shared --enable-languages=c,c++ --disable-libsanitizer 1>/dev/null
+../gcc*/configure --prefix="$PREFIX" --target="$TARGET" --with-sysroot="$PREFIX" --disable-multilib --disable-bootstrap --disable-werror --disable-shared --enable-languages=c,c++ --disable-libsanitizer --disable-nls 1>/dev/null
 make -j$WORKERS 1>/dev/null
 make install 1>/dev/null
 cd ..
@@ -87,16 +139,16 @@ cd "$PREFIX"
 ln -nfs . usr
 cd ..
 
-## Build final musl
-rm -rf build-musl
-mkdir build-musl
-cd build-musl
-CROSS_COMPILE="$TARGET-" ../musl*/configure --prefix="$PREFIX" --target="$ARCH" --disable-shared --syslibdir="$PREFIX/lib" 1>/dev/null
+## Build final libgg
+rm -rf build-libgg
+mkdir build-libgg
+cd build-libgg
+CROSS_COMPILE="$TARGET-" ../libgg/configure --prefix="$PREFIX" --target="$ARCH" --disable-shared --syslibdir="$PREFIX/lib" 1>/dev/null
 make -j$WORKERS 1>/dev/null
 make install 1>/dev/null
 cd ..
-rm -rf build-musl
-echo "5/7 musl done."
+rm -rf build-libgg
+echo "5/7 libgg done."
 
 ## Build final binutils
 rm -rf build-binutils
@@ -113,7 +165,7 @@ echo "6/7 BINUTILS done."
 rm -rf build-gcc
 mkdir build-gcc
 cd build-gcc
-../gcc*/configure --prefix="$PREFIX" --target="$TARGET" --with-sysroot="$PREFIX" --disable-multilib --disable-bootstrap --disable-werror --enable-languages=c,c++ --disable-libsanitizer --disable-shared --libexecdir="$PREFIX/lib" 1>/dev/null
+../gcc*/configure --prefix="$PREFIX" --target="$TARGET" --with-sysroot="$PREFIX" --disable-multilib --disable-bootstrap --disable-werror --enable-languages=c,c++ --disable-libsanitizer --disable-shared --libexecdir="$PREFIX/lib" --disable-nls 1>/dev/null
 make -j$WORKERS 1>/dev/null
 make install 1>/dev/null
 cd ..
